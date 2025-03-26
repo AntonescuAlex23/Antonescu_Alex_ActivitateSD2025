@@ -189,11 +189,20 @@ char* getNumeSoferMasinaScumpa(Lista lista) {
 
 int main() {
 	Lista lista;
+
 	lista = citireLDMasiniDinFisier("/Users/alexantonescu/Documents/SDD-SEMINAR5/masini.txt");
+	stergeMasinaDupaID(&lista, 5);
+	dezalocareLDMasini(lista);
+
+	lista = citireLDMasiniDinFisier("/Users/alexantonescu/Documents/SDD-SEMINAR5/masini.txt");
+
 	afisareListaMasiniInceput(lista);
+
 	float pretMediu = calculeazaPretMediu(lista);
 	printf("Pret mediu: %.2f\n", pretMediu);
+
 	char* numeSofer = getNumeSoferMasinaScumpa(lista);
 	printf("Nume sofer: %s\n", numeSofer);
+
 	return 0;
 }
