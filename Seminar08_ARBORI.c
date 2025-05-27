@@ -250,7 +250,7 @@ float calculeazaPretulMasinilorUnuiSofer(Nod* radacina, const char* numeSofer) {
 
 int main() {
 
-	Nod* arbore = citireArboreDeMasiniDinFisier("/Users/mateiavram/Desktop/facultate/Structuri de Date/Seminar09_SDD/masini_arbore.txt");
+	Nod* arbore = citireArboreDeMasiniDinFisier("/Users/alexantonescu/Documents/SDD-SEMINAR09/masini_arbore.txt");
 	afisareArboreInOrdine(arbore);
 	Masina m = getMasinaByID(arbore, 2);
 	printf("\n\n-----------------------\n");
